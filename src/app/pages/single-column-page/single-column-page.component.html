@@ -1,0 +1,38 @@
+<div class="home-container">
+  <dsm-grid>
+    <div class="page-title grid-tile col-md-5 col-sm-8 col-xs-4">
+      <dsm-typography variant="h1">Single Column</dsm-typography>
+    </div>
+
+    <section class="paragraph grid-tile col-md-8 col-sm-8 col-xs-4">
+      <dsm-typography variant="body1"
+        >Description is lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Praesent et magna non magna hendrerit gravida auctor at eros. Aenean
+        dapibus rhoncus lacinia. Praesent fringilla eget lacus ac sagittis.
+        Phasellus a aliquet leo. Vivamus euismod felis a dolor accumsan
+        semper.</dsm-typography
+      >
+    </section>
+
+    <div class="button-with-link grid-tile col-md-8 col-sm-8 col-xs-4">
+      <dsm-button
+        variant="link"
+        size="medium"
+        href="https://mcb.invisionapp.com/dsm/the-mauritius-commercial-bank-ltd/mcb-web"
+        className="link-btn"
+      >
+        <img src="assets/icons/icons_action_new_window_24px_1_outlined.svg" />
+        View in the Design System
+      </dsm-button>
+    </div>
+
+    <div class="grid-tile col-md-8 col-sm-8 col-xs-4">
+      <dsm-tab
+        [tabItems]="tabItems"
+        identifier="id"
+        [currentActiveTab]="currentActiveTab"
+      >
+      </dsm-tab>
+    </div>
+  </dsm-grid>
+</div>

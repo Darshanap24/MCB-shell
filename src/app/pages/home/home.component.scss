@@ -1,0 +1,43 @@
+::ng-deep .link-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 !important;
+}
+
+.paragraph {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.button-with-link {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.tools {
+  margin: 32px 0;
+}
+
+.tile-container {
+  .tile-image {
+    height: 192px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tile-content {
+    .title {
+      margin-top: 16px;
+    }
+
+    .description {
+      margin-top: 16px;
+    }
+  }
+}

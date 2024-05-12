@@ -1,0 +1,102 @@
+<div class="home-container">
+  <dsm-grid>
+    <div class="page-title grid-tile col-md-5 col-sm-8 col-xs-4">
+      <dsm-typography variant="h1">Welcome to The Shell</dsm-typography>
+    </div>
+
+    <section class="paragraph grid-tile col-md-8 col-sm-8 col-xs-4">
+      <dsm-typography variant="h2">What is The Shell?</dsm-typography>
+      <dsm-typography variant="body1"
+        >The shell is lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Praesent et magna non magna hendrerit gravida auctor at eros. Aenean
+        dapibus rhoncus lacinia. Praesent fringilla eget lacus ac sagittis.
+        Phasellus a aliquet leo. Vivamus euismod felis a dolor accumsan
+        semper.</dsm-typography
+      >
+    </section>
+
+    <section class="paragraph grid-tile col-md-8 col-sm-8 col-xs-4">
+      <dsm-typography variant="h2">Design System</dsm-typography>
+      <dsm-typography variant="body1"
+        >The shell is lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Praesent et magna non magna hendrerit gravida auctor at eros. Aenean
+        dapibus rhoncus lacinia. Praesent fringilla eget lacus ac sagittis.
+        Phasellus a aliquet leo. Vivamus euismod felis a dolor accumsan
+        semper.</dsm-typography
+      >
+    </section>
+
+    <div class="button-with-link grid-tile col-md-8 col-sm-8 col-xs-4">
+      <dsm-button
+        variant="link"
+        size="medium"
+        href="https://mcb.invisionapp.com/dsm/the-mauritius-commercial-bank-ltd/mcb-web"
+        className="link-btn"
+      >
+        <img src="assets/icons/icons_action_new_window_24px_1_outlined.svg" />
+        View the MCB Design System
+      </dsm-button>
+    </div>
+
+    <section class="tools grid-tile col-md-12 col-sm-8 col-xs-4">
+      <dsm-grid [columnSize]="3" [noMargin]="true">
+        <div
+          class="grid-tile col-md-4 col-sm-4 col-xs-4"
+          *ngFor="let item of ds_tiles"
+        >
+          <div class="tile-container">
+            <div class="tile-image" [ngStyle]="{ background: item.color }">
+              <img [src]="item.image" />
+            </div>
+            <div class="tile-content">
+              <div class="title">
+                <dsm-typography variant="body1" [fontWeight]="'bold'">{{
+                  item.title
+                }}</dsm-typography>
+              </div>
+              <div class="description">
+                {{ item.description }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </dsm-grid>
+    </section>
+
+    <section class="paragraph grid-tile col-md-8 col-sm-8 col-xs-4">
+      <dsm-typography variant="h2">Design templates</dsm-typography>
+      <dsm-typography variant="body1"
+        >The shell is lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Praesent et magna non magna hendrerit gravida auctor at eros. Aenean
+        dapibus rhoncus lacinia. Praesent fringilla eget lacus ac sagittis.
+        Phasellus a aliquet leo. Vivamus euismod felis a dolor accumsan
+        semper.</dsm-typography
+      >
+    </section>
+    <section class="tools grid-tile col-md-12 col-sm-8 col-xs-4">
+      <dsm-grid [columnSize]="3" [noMargin]="true">
+        <div
+          class="grid-tile col-md-4 col-sm-4 col-xs-4"
+          *ngFor="let item of ds_templates"
+        >
+          <div class="tile-container">
+            <div class="tile-image" [ngStyle]="{ background: item.color }">
+              <img [src]="item.image" />
+            </div>
+            <div class="tile-content">
+              <div class="title">
+                <dsm-typography variant="body1" [fontWeight]="'bold'">{{
+                  item.title
+                }}</dsm-typography>
+              </div>
+              <div class="description">
+                {{ item.description }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </dsm-grid>
+    </section>
+    <!-- </div> -->
+  </dsm-grid>
+</div>

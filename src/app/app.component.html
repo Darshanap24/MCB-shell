@@ -1,0 +1,19 @@
+<dsm-side-bar
+  appName="The Shell"
+  logo="assets/icons/logo-mcb-icon-default.svg"
+  identifier="id"
+  [showUserMenu]="false"
+  [showIcons]="false"
+  [showSearch]="false"
+  [navigation]="menuList"
+  (onClick)="menuClicked($event)"
+></dsm-side-bar>
+
+<div class="main-container">
+  <div class="body-section content">
+    <router-outlet></router-outlet>
+  </div>
+  <div class="footer-section">
+    <dsm-footer variant="default"></dsm-footer>
+  </div>
+</div>
